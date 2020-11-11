@@ -1,0 +1,54 @@
+// program for online order 
+import java.util.*;
+public class pizza
+{
+public static void main(String args[])
+{
+Scanner in = new Scanner(System.in);
+int num=0,pizza=0,bev=0,bag=0,choice2;
+System.out.println("welcome to INDO-ASIAN PIZZA CENTRE. You can now place your order online. type 1 and click enter to see difrrent options ");
+int choice = in.nextInt();
+if(choice==1)
+{
+System.out.println("We have differnt meal choices. Type 1to get snack items, 2 to see differnt veg pizza options, 3 to get desserts and 4 to get full meal options ");
+ choice2 =in.nextInt();
+if(choice2==1)
+{
+System.out.println("we have the following starters/snacks:" + "\n 1) french fries salty" + "\n 2) french fries chessy" + "\n 3) french fries hot n spicy" + "\n 4) vegie tacos " + "\n 5) chessy taco");
+System.out.println("Only one choice can be made from here.Enter your choice by using 1 for french fries salty,2 for french fries chessy and so on till 5"); 
+num =in.nextInt();
+}
+if(choice2==2)
+{
+System.out.println(" list of pizzas are below" + "\n 1) vegie pizza" + "\n 2) capsicum and cheese pizza" + "\n 3) panner and corn pizza" + "\n 4) cheese and sausce pizza");
+System.out.println( " 5) mushroom pizza"+ "\n 6) pasta pizza"+ "\n 7)noodle n pizza combo"+ "\n 8) spicy veg pizza"+ "\n 9) manchurian pizza"+ "\n 10) pepper pizza ");
+System.out.println("Only 1 choice can be made from here.Enter your choice by using 1 for vegie pizza,2 for capsicum and cheese pizza and so on till 10"); 
+ pizza=in.nextInt();
+}
+if(choice2==3)
+{
+System.out.println("the beverages are:"+ "\n 1)hot choco cake"+ "\n 2)  cold coffee"+ "\n 3)mint and ice drink"+ "\n 4) ice tea"+ "\n 5) mix fruit smootie");
+System.out.println("Only 1 choice can be made from here.Enter your choice by using 1 for hot choco cake,2 for cold coffee and so on till 5"); 
+bev=in.nextInt();
+}
+if(choice2==4)
+{
+System.out.println("the full meal are:"+ "\n 1)french fries salty,vegie pizza and mint and ice drink"+ "\n 2)vegie tacos,panner and corn pizza and mix fruit smootie  "+ "\n 3)french fries hot n spicy,noodle n pizza combo and ice tea");
+System.out.println("Only one choice can be made from here.Enter your choice by using 1 for the frist meal so on till 3"); 
+ bag=in.nextInt();
+}
+System.out.println("your order:");
+System.out.println("\t choice number");
+System.out.println( "Starters \t" +num);
+System.out.println( "Beverages \t" +bev);
+System.out.println( "Meal    " +"\t"   +bag);
+System.out.println( "Pizza   " +"\t"  +pizza  );
+
+}
+else
+{
+System.out.println("you have made the wrong choice");
+}
+
+}
+}
